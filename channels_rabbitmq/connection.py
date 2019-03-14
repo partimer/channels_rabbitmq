@@ -12,10 +12,6 @@ from channels.exceptions import ChannelFull
 
 logger = logging.getLogger(__name__)
 
-from django.conf import settings
-def setting(name, default=None):
-    return getattr(settings, name, default)
-
 ReconnectDelay = 1.0  # seconds
 
 def routing_group(group, prefix=None):
